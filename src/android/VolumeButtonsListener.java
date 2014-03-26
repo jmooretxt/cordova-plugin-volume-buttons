@@ -173,7 +173,7 @@ public class VolumeButtonsListener extends CordovaPlugin implements OnKeyListene
 			}
 		}
 
-		return false;
+		return true;
 	}
 
 
