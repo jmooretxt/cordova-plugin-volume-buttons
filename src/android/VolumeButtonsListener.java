@@ -158,6 +158,7 @@ public class VolumeButtonsListener extends CordovaPlugin implements OnKeyListene
 				catch(JSONException ex){
 					Log.e(VolumeButtonsListener_LOG, ex.getMessage());
 				}
+				return true;
 			}
 			else if( keyCode == KeyEvent.KEYCODE_VOLUME_DOWN  ){
 
@@ -170,10 +171,11 @@ public class VolumeButtonsListener extends CordovaPlugin implements OnKeyListene
 				catch(JSONException ex){
 					Log.e(VolumeButtonsListener_LOG, ex.getMessage());
 				}
+				return true;
 			}
 		}
 
-		return true;
+		return false;
 	}
 
 
